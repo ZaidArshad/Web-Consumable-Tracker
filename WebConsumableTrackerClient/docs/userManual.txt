@@ -1,0 +1,22 @@
+Operation 1: List all items
+All the items will be listed under the "All" tab
+If enough items have been added they will be viewable through use of the scroll bar
+
+Operation 2: Add a new item
+To add a new item you must click the "Add Item" button at the button of the screen
+A dialog will open up that has fields that need to be filled (excluding notes)
+
+Operation 3: Remove an item
+After an item is added it can be removed with the "Remove" button
+
+Operation 4: List expired items
+To show expired items, you can click the "Expired" button at the top
+
+Operation 5: List items that are not expired
+To show non-expired items, you can click the "Not Expired" button at the top
+
+Operation 6: List items expiring in 7 days
+To show items expiring in 7 days, you can click the "Expires in 7 Days" button at the top
+
+Operation 7: Exit
+To exit the application you can click the x button

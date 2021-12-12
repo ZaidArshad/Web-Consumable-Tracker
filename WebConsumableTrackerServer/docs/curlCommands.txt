@@ -1,0 +1,38 @@
+Send a ping to the server
+curl -X GET localhost:8080/ping
+
+# List all the items from the server in JSON format
+curl -X GET localhost:8080/listAll
+
+# Lists all the expired items from the server in JSON format
+curl -X GET localhost:8080/listExpired
+
+# Lists all the non-expired items from the server in JSON format
+curl -X GET localhost:8080/listNonExpired
+
+# Lists all the items expiring in 7 days from the server in JSON format
+curl -X GET localhost:8080/listExpiringIn7Days
+
+# Saves the items list in the server to a JSON file
+curl -X GET localhost:8080/exit
+
+# Add a food item to the list in the server
+curl -H "Content-Type: application/json" -X POST -d
+{"type":1,"name":"English_muffins","notes":"","price":6.0,"quantity":390.5,\"expiryDate\":\"2021-11-15T00:00\"}
+localhost:8080/addItem/food
+
+# Add a food item to the list in the server
+# JSON content can vary and command must be made in 1 line
+curl -H "Content-Type: application/json" -X POST -d
+{"type":1,"name":"English_muffins","notes":"","price":6.0,"quantity":390.5,\"expiryDate\":\"2021-11-15T00:00\"}
+localhost:8080/addItem/drink
+
+# Add a drink item to the list in the server
+# JSON content can vary and command must be made in 1 line
+curl -H "Content-Type: application/json" -X POST -d
+{"type":1,"name":"Coffee","notes":"","price":6.0,"quantity":390.5,\"expiryDate\":\"2021-11-15T00:00\"}
+localhost:8080/addItem/drink
+
+# Remove an item from the server based on the index
+# index may very, in this example 0 is the index as shown after "-d"
+curl -H "Content-Type: application/json" -X POST -d 0 localhost:8080/removeItem
